@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_button_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_190sdp"
+        android:gravity="center">
+        <com.zavosh.software.dentist.dentist.CustomViews.MyProgressBarBlue
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loader"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_190sdp"
+        android:orientation="vertical"
+        android:id="@+id/ll_box"
+        android:visibility="visible">
+        <com.zavosh.software.dentist.dentist.CustomViews.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center_horizontal"
+            android:text="@string/chooseState"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_12sdp"
+            android:id="@+id/tv_titleDialog"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/text_color"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-10dp"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/_25sdp"
+            android:paddingLeft="@dimen/_25sdp"
+            android:layout_marginTop="-10dp">
+
+            <io.blackbox_vision.wheelview.view.WheelView
+                android:id="@+id/stateAndCity"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_gravity="center"
+                app:centerTextColor="@color/text_color"
+                app:initPosition="3"
+                app:canLoop="true"
+                app:lineColor="@color/end"
+                app:topBottomTextColor="#ffafafaf"
+                app:textSize="@dimen/_13sdp"
+                android:layout_marginRight="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:layout_marginLeft="@dimen/_25sdp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:gravity="center">
+
+                <com.zavosh.software.dentist.dentist.CustomViews.MyButton
+                    android:id="@+id/cancel_Btn"
+                    android:layout_width="0.0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_weight="0.99"
+                    android:background="@drawable/bg_button_app"
+                    android:gravity="center"
+                    android:text="انصراف"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginRight="@dimen/_10sdp"/>
+
+                <com.zavosh.software.dentist.dentist.CustomViews.MyButton
+                    android:id="@+id/confirmBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_weight="0.99"
+                    android:background="@drawable/bg_button_app"
+                    android:gravity="center"
+                    android:text="تایید"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

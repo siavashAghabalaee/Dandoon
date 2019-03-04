@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MVP_Splash.SplashActivity"
+    android:background="@drawable/bg_choose_role">
+
+    <com.zavosh.software.dentist.dentist.CustomViews.MyImageView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/tooth"
+        android:scaleType="centerCrop"
+        android:id="@+id/logo"
+        android:layout_marginTop="@dimen/_100sdp"/>
+    <com.zavosh.software.dentist.dentist.CustomViews.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:gravity="center"
+        android:textSize="@dimen/_14sdp"
+        android:id="@+id/tv_appName"
+        android:textColor="@color/white"
+        android:text="@string/app_name"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"/>
+    <com.eyalbira.loadingdots.LoadingDots
+        android:id="@+id/loaderDots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:LoadingDots_auto_play="true"
+
+        app:LoadingDots_dots_color="@color/white"
+        app:LoadingDots_dots_count="4"
+        app:LoadingDots_dots_size="@dimen/_12sdp"
+        app:LoadingDots_dots_space="@dimen/_3sdp"
+
+        app:LoadingDots_loop_duration="1000"
+        app:LoadingDots_loop_start_delay="50"
+
+        app:LoadingDots_jump_duration="400"
+        app:LoadingDots_jump_height="@dimen/_10sdp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_30sdp"/>
+
+</RelativeLayout>

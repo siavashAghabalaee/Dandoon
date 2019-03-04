@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MVP_ChooseRole.ChooseRole"
+    android:background="@drawable/bg_choose_role">
+
+    <com.zavosh.software.dentist.dentist.CustomViews.MyImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_90sdp"
+        android:src="@mipmap/tooth"/>
+    <com.zavosh.software.dentist.dentist.CustomViews.MyTextView
+        android:id="@+id/tv_appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:layout_below="@id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_name"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_15sdp"/>
+
+    <com.zavosh.software.dentist.dentist.CustomViews.MyButton
+        android:id="@+id/btn_sick"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_34sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:background="@drawable/bg_button_test"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btn_doctor"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:text="@string/sick"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/white"/>
+    <com.zavosh.software.dentist.dentist.CustomViews.MyButton
+        android:id="@+id/btn_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_34sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:background="@drawable/bg_button_test"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/doctor"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_100sdp"/>
+
+</RelativeLayout>

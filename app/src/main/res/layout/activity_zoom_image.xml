@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MVP_ImageZoom.ZoomImageActivity"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/header">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_choose_role">
+            <com.zavosh.software.dentist.dentist.CustomViews.MyImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:id="@+id/iv_back"
+                android:src="@mipmap/back"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <com.zavosh.software.dentist.dentist.CustomViews.MyImageViewZoom
+        android:id="@+id/imageZoom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

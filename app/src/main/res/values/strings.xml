@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">Dentist</string>
+    <string name="doctor">دکتر هستم</string>
+    <string name="sick">بیمار هستم</string>
+    <string name="login">ورود</string>
+    <string name="register">ثبت نام</string>
+    <string name="phone">شماره موبایل</string>
+    <string name="password">رمز ورود</string>
+    <string name="name">نام و نام خانوادگی</string>
+    <string name="send">ارسال</string>
+    <string name="yes">بله</string>
+    <string name="no">خیر</string>
+    <string name="error">خطا</string>
+    <string name="add">ثبت</string>
+    <string name="history">درخواست ها</string>
+    <string name="aboutUs">درباره ما</string>
+    <string name="retry">تلاش مجدد</string>
+    <string name="share">معرفی به دوستان</string>
+    <string name="support">پشتیبانی</string>
+    <string name="install">نصب</string>
+    <string name="exit">خروج</string>
+    <string name="later">بعداً</string>
+    <string name="continuee">ادامه</string>
+    <string name="old">بزرگسال</string>
+    <string name="child">کودک</string>
+    <string name="cancel">لغو</string>
+    <string name="home">خانه</string>
+
+    <string name="ans1">لطفا به سوال یک پاسخ دهید.</string>
+    <string name="ans2">لطفا به سوال دو پاسخ دهید.</string>
+    <string name="ans3">لطفا به سوال سه پاسخ دهید.</string>
+    <string name="ans4">لطفا به سوال چهار پاسخ دهید.</string>
+    <string name="ans5">لطفا به سوال پنج پاسخ دهید.</string>
+
+    <string name="chooseState">استان مورد نظر خود را انتخاب نمایید.</string>
+    <string name="chooseCity">شهر مورد نظر خود را انتخاب نمایید.</string>
+    <string name="addCity">شهر خود را انتخاب نمایید</string>
+    <string name="checkConnection">لطفا وضعیت ارتباط خود را بررسی کنید</string>
+    <string name="androidErrorRequest">خطا در برقراری ارتباط.</string>
+    <string name="enterFullName">لطفا نام کامل خود را وارد نمایید.</string>
+    <string name="enterYourData">لطفا اطلاعات بالا را وارد نمایید.</string>
+    <string name="enterCode">لطفا کد تایید را وارد نمایید.</string>
+    <string name="passwordRecovery">بازیابی رمز عبور</string>
+    <string name="forgot_password">آیا رمز عبور خود را فراموش کرده اید؟</string>
+    <string name="enter_activation_code"> لطفا کد پیامک شده را وارد کنید</string>
+    <string name="activation"> فعال سازی حساب کاربری</string>
+    <string name="phoneIsNotValid"> شماره وارد شده معتبر نمی باشد.</string>
+    <string name="newVersion">نسخه جدید برنامه در دسترس می باشد.</string>
+    <string name="selectYourTooth">دندان مورد نظر خود را انتخاب نمایید.</string>
+    <string name="answerQuestions">لطفا به سوالات زیر پاسخ دهید (6 سوال)</string>
+    <string name="deleteImage">آیا از حذف عکس اطمینان دارید؟</string>
+    <string name="chooseImage">انتخاب عکس</string>
+    <string name="pleaseWait">لطفا کمی صبر کنید</string>
+    <string name="pleaseSetImage">لطفا حداقل یک عکس از دندان خود قرار دهید.</string>
+    <string name="delete">حذف</string>
+    <string name="camera">دوربین</string>
+    <string name="gallery">گالری</string>
+    <string name="sample">نمونه</string>
+    <string name="ageType">رده سنی :</string>
+    <string name="toothNumber">شماره دندان :</string>
+    <string name="group">گروه درمان :</string>
+    <string name="notFind">موردی یافت نشد.</string>
+    <string name="images">تصاویر</string>
+    <string name="city">شهر :</string>
+    <string name="doctorsOpinion">نظر پزشک :</string>
+    <string name="getInfoPatient">دریافت اطلاعات تماس</string>
+    <string name="myPatientList">لیست بیماران من</string>
+    <string name="profile">پروفایل</string>
+    <string name="detail">جزئیات</string>
+    <string name="patientInfo">اطلاعات بیمار</string>
+
+
+    <string name="questionOne">میزان درد :</string>
+    <string name="noPain">ندارد</string>
+    <string name="medium">متوسط</string>
+    <string name="low">کم</string>
+    <string name="much">زیاد</string>
+
+    <string name="painArea">ناحیه درد :</string>
+    <string name="known">مشخص</string>
+    <string name="unknown">نا مشخص</string>
+
+
+    <string name="painQuality">کیفیت درد :</string>
+    <string name="obscure">مبهم</string>
+    <string name="sharpPain">درد تیز</string>
+    <string name="slappery">نبضی وار</string>
+    <string name="constantAndConstant">ثابت و همیشگی</string>
+    <string name="nightly">شبانه</string>
+
+
+    <string name="painType">نوع درد :</string>
+    <string name="automatically">خود به خودی</string>
+    <string name="cold">سرما</string>
+    <string name="heat">گرما</string>
+    <string name="chew">جویدن</string>
+
+    <string name="haveTreatment">درمان قبلی داشته اید ؟</string>
+    <string name="haveTreatment1">درمان قبلی :</string>
+    <string name="restoration">ترمیم</string>
+    <string name="rootCanal">عصب کشی</string>
+
+
+    <string name="drugsUsed">دارو های مصرفی :</string>
+    <string name="description">توضیحات</string>
+    <string name="opg">تصویر opg</string>
+    <string name="close">بستن</string>
+    <string name="call">تماس</string>
+
+
+    <string-array name="toothArray">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+    </string-array>
+</resources>
+
+
+
+
+
+
