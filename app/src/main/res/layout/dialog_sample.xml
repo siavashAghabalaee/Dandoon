@@ -15,13 +15,13 @@
             android:layout_height="@dimen/_130sdp"
             android:orientation="horizontal"
             android:layout_marginBottom="@dimen/_10sdp">
-            <com.zavosh.software.dentist.dentist.CustomViews.MyImageView
+            <com.zavosh.software.DrDandoon.CustomViews.MyImageView
                 android:layout_width="@dimen/_130sdp"
                 android:layout_height="@dimen/_130sdp"
                 android:scaleType="centerCrop"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:id="@+id/image1"/>
-            <com.zavosh.software.dentist.dentist.CustomViews.MyImageView
+            <com.zavosh.software.DrDandoon.CustomViews.MyImageView
                 android:layout_width="@dimen/_130sdp"
                 android:layout_height="@dimen/_130sdp"
                 android:scaleType="centerCrop"
@@ -36,13 +36,13 @@
                 android:layout_height="@dimen/_130sdp"
                 android:orientation="horizontal"
                 android:layout_marginBottom="@dimen/_10sdp">
-                <com.zavosh.software.dentist.dentist.CustomViews.MyImageView
+                <com.zavosh.software.DrDandoon.CustomViews.MyImageView
                     android:layout_width="@dimen/_130sdp"
                     android:layout_height="@dimen/_130sdp"
                     android:scaleType="centerCrop"
                     android:layout_marginRight="@dimen/_10sdp"
                     android:id="@+id/image3"/>
-                <com.zavosh.software.dentist.dentist.CustomViews.MyImageView
+                <com.zavosh.software.DrDandoon.CustomViews.MyImageView
                     android:layout_width="@dimen/_130sdp"
                     android:layout_height="@dimen/_130sdp"
                     android:scaleType="centerCrop"
@@ -52,7 +52,7 @@
 
     </LinearLayout>
 
-    <com.zavosh.software.dentist.dentist.CustomViews.MyTextView
+    <com.zavosh.software.DrDandoon.CustomViews.MyTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/text_color"
@@ -63,7 +63,7 @@
         android:background="@drawable/bg_button_silver"
         android:layout_margin="@dimen/_10sdp"
         android:id="@+id/tv_description"/>
-    <com.zavosh.software.dentist.dentist.CustomViews.MyTextView
+    <com.zavosh.software.DrDandoon.CustomViews.MyTextView
         android:layout_width="@dimen/_60sdp"
         android:layout_height="@dimen/_30sdp"
         android:background="@drawable/bg_button_white"

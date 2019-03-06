@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.zavosh.software.dentist.dentist">
+    package="com.zavosh.software.DrDandoon">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -15,49 +15,65 @@
     <application
         android:name=".Content.MyApp"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/tooth"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/tooth"
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
         tools:replace="android:supportsRtl">
-        <activity android:name=".Activities.MVP_HomeDoctor.HomeDoctorActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Activities.MVP_ChooseRole.ChooseRole"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Activities.MVP_Login.LoginActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Activities.MVP_Register.RegisterActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Activities.MVP_Activation.ActivationActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Activities.MVP_ForgotPassword.ForgotPassActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Activities.MVP_HomePatient.HomePatientActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Activities.MVP_Splash.SplashActivity"
+        <activity
+            android:name=".Activities.MVP_HomeDoctor.HomeDoctorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MVP_ChooseRole.ChooseRole"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MVP_Login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MVP_Register.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MVP_Activation.ActivationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MVP_ForgotPassword.ForgotPassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MVP_HomePatient.HomePatientActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MVP_Splash.SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity
-            >
-        <activity android:name=".Activities.MVP_ToothSelection.ToothSelectionActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Activities.MVP_AnswerQuestions.AnswerQuestionsActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Activities.MVP_SelectImages.SelectImagesActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Activities.MVP_ChoosePatient.ChoosePatientActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Activities.MVP_OrderDetail.OrderDetailActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Activities.MVP_ImageZoom.ZoomImageActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Activities.MVP_MyPatientList.MyPatientListActivity"
-            android:screenOrientation="portrait"/>
+        </activity>
+        <activity
+            android:name=".Activities.MVP_ToothSelection.ToothSelectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MVP_AnswerQuestions.AnswerQuestionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MVP_SelectImages.SelectImagesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MVP_ChoosePatient.ChoosePatientActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MVP_OrderDetail.OrderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MVP_ImageZoom.ZoomImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MVP_MyPatientList.MyPatientListActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activities.MVP_AboutUs.AboutUsActivity" />
+        <activity android:name=".Activities.MVP_Sapport.SupportActivity"></activity>
     </application>
 
 </manifest>

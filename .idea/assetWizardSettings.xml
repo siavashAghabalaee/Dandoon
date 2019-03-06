@@ -38,7 +38,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="paddingPercent" value="40" />
+                                                <entry key="paddingPercent" value="5" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -51,8 +51,8 @@
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
                                       <entry key="iconShape" value="NONE" />
-                                      <entry key="imageAsset" value="C:\Users\Siavash\Desktop\dentistData\profile_icone.png" />
-                                      <entry key="outputName" value="profile_icone" />
+                                      <entry key="imageAsset" value="C:\Users\Siavash\Desktop\dentistData\logout.png" />
+                                      <entry key="outputName" value="logout_icon" />
                                     </map>
                                   </option>
                                 </PersistentState>

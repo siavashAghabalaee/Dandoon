@@ -19,14 +19,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/bg_choose_role">
-                <com.zavosh.software.dentist.dentist.CustomViews.MyImageView
+                <com.zavosh.software.DrDandoon.CustomViews.MyImageView
                     android:layout_width="@dimen/_30sdp"
                     android:layout_height="@dimen/_30sdp"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="@dimen/_10sdp"
                     android:id="@+id/iv_back"
                     android:src="@mipmap/back"/>
-                <com.zavosh.software.dentist.dentist.CustomViews.MyImageView
+                <com.zavosh.software.DrDandoon.CustomViews.MyImageView
                     android:layout_width="@dimen/_30sdp"
                     android:layout_height="@dimen/_30sdp"
                     android:layout_centerVertical="true"
@@ -34,14 +34,14 @@
                     android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
                     android:id="@+id/iv_icon"
-                    android:src="@mipmap/add"/>
-                <com.zavosh.software.dentist.dentist.CustomViews.MyTextView
+                    android:src="@mipmap/history"/>
+                <com.zavosh.software.DrDandoon.CustomViews.MyTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@+id/iv_logo"
                     android:textColor="@color/white"
-                    android:text="@string/add"
+                    android:text="@string/history"
                     android:padding="@dimen/_10sdp"
                     android:textSize="@dimen/_13sdp"
                     android:layout_toLeftOf="@+id/iv_icon"/>
@@ -54,7 +54,7 @@
             android:id="@+id/recyclerView"/>
     </LinearLayout>
 
-    <com.zavosh.software.dentist.dentist.CustomViews.MyProgressBarBlue
+    <com.zavosh.software.DrDandoon.CustomViews.MyProgressBarBlue
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -62,7 +62,7 @@
         android:id="@+id/loader"
         android:visibility="gone"/>
 
-    <com.zavosh.software.dentist.dentist.CustomViews.MyTextView
+    <com.zavosh.software.DrDandoon.CustomViews.MyTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="@dimen/_14sdp"

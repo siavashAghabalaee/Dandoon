@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Dentist</string>
+    <string name="app_name">Dr Dandoon</string>
     <string name="doctor">دکتر هستم</string>
     <string name="sick">بیمار هستم</string>
     <string name="login">ورود</string>
@@ -106,6 +106,13 @@
     <string name="opg">تصویر opg</string>
     <string name="close">بستن</string>
     <string name="call">تماس</string>
+    <string name="subject">موضوع</string>
+    <string name="setSubjectAndDescription">لصفا موضوع و متن پیام خود را وارد نمایید.</string>
+    <string name="chooseTooth">لیست بیماران</string>
+    <string name="orderDetail">اطلاعات بیمار</string>
+    <string name="tehran">تهران</string>
+    <string name="logout">آیا می خواهید از حساب کاربری خود خارج شوید؟</string>
+    <string name="out">خروج</string>
 
 
     <string-array name="toothArray">

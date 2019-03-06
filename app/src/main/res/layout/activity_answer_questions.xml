@@ -18,14 +18,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/bg_choose_role">
-            <com.zavosh.software.dentist.dentist.CustomViews.MyImageView
+            <com.zavosh.software.DrDandoon.CustomViews.MyImageView
                 android:layout_width="@dimen/_30sdp"
                 android:layout_height="@dimen/_30sdp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="@dimen/_10sdp"
                 android:id="@+id/iv_back"
                 android:src="@mipmap/back"/>
-            <com.zavosh.software.dentist.dentist.CustomViews.MyImageView
+            <com.zavosh.software.DrDandoon.CustomViews.MyImageView
                 android:layout_width="@dimen/_30sdp"
                 android:layout_height="@dimen/_30sdp"
                 android:layout_centerVertical="true"
@@ -34,7 +34,7 @@
                 android:layout_alignParentEnd="true"
                 android:id="@+id/iv_icon"
                 android:src="@mipmap/add"/>
-            <com.zavosh.software.dentist.dentist.CustomViews.MyTextView
+            <com.zavosh.software.DrDandoon.CustomViews.MyTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -55,7 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <com.zavosh.software.dentist.dentist.CustomViews.MyTextView
+            <com.zavosh.software.DrDandoon.CustomViews.MyTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="@dimen/_10sdp"
@@ -79,7 +79,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:background="@color/white">
-                    <com.zavosh.software.dentist.dentist.CustomViews.MyTextView
+                    <com.zavosh.software.DrDandoon.CustomViews.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="@dimen/_10sdp"
@@ -101,7 +101,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             android:gravity="right">
-                            <com.zavosh.software.dentist.dentist.CustomViews.MyCheckBox
+                            <com.zavosh.software.DrDandoon.CustomViews.MyCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:buttonTint="@color/end"
@@ -111,7 +111,7 @@
                                 android:layoutDirection="rtl"
                                 android:textColor="@color/text_color"
                                 android:layout_margin="@dimen/_3sdp"/>
-                            <com.zavosh.software.dentist.dentist.CustomViews.MyCheckBox
+                            <com.zavosh.software.DrDandoon.CustomViews.MyCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:buttonTint="@color/end"
@@ -128,7 +128,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             android:gravity="right">
-                            <com.zavosh.software.dentist.dentist.CustomViews.MyCheckBox
+                            <com.zavosh.software.DrDandoon.CustomViews.MyCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:buttonTint="@color/end"
@@ -138,7 +138,7 @@
                                 android:textColor="@color/text_color"
                                 android:layout_margin="@dimen/_3sdp"
                                 android:id="@+id/ch_NoPain"/>
-                            <com.zavosh.software.dentist.dentist.CustomViews.MyCheckBox
+                            <com.zavosh.software.DrDandoon.CustomViews.MyCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:buttonTint="@color/end"
@@ -164,7 +164,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:background="@color/white">
-                    <com.zavosh.software.dentist.dentist.CustomViews.MyTextView
+                    <com.zavosh.software.DrDandoon.CustomViews.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="@dimen/_10sdp"
@@ -186,7 +186,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             android:gravity="right">
-                            <com.zavosh.software.dentist.dentist.CustomViews.MyCheckBox
+                            <com.zavosh.software.DrDandoon.CustomViews.MyCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:buttonTint="@color/end"
@@ -203,7 +203,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             android:gravity="right">
-                            <com.zavosh.software.dentist.dentist.CustomViews.MyCheckBox
+                            <com.zavosh.software.DrDandoon.CustomViews.MyCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:buttonTint="@color/end"
@@ -229,7 +229,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:background="@color/white">
-                    <com.zavosh.software.dentist.dentist.CustomViews.MyTextView
+                    <com.zavosh.software.DrDandoon.CustomViews.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="@dimen/_10sdp"
@@ -251,7 +251,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             android:gravity="right">
-                            <com.zavosh.software.dentist.dentist.CustomViews.MyCheckBox
+                            <com.zavosh.software.DrDandoon.CustomViews.MyCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:buttonTint="@color/end"
@@ -261,7 +261,7 @@
                                 android:layoutDirection="rtl"
                                 android:textColor="@color/text_color"
                                 android:layout_margin="@dimen/_3sdp"/>
-                            <com.zavosh.software.dentist.dentist.CustomViews.MyCheckBox
+                            <com.zavosh.software.DrDandoon.CustomViews.MyCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:buttonTint="@color/end"
@@ -278,7 +278,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             android:gravity="right">
-                            <com.zavosh.software.dentist.dentist.CustomViews.MyCheckBox
+                            <com.zavosh.software.DrDandoon.CustomViews.MyCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:buttonTint="@color/end"
@@ -288,7 +288,7 @@
                                 android:textColor="@color/text_color"
                                 android:layout_margin="@dimen/_3sdp"
                                 android:id="@+id/ch_obscure"/>
-                            <com.zavosh.software.dentist.dentist.CustomViews.MyCheckBox
+                            <com.zavosh.software.DrDandoon.CustomViews.MyCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:buttonTint="@color/end"
@@ -298,7 +298,7 @@
                                 android:layoutDirection="rtl"
                                 android:textColor="@color/text_color"
                                 android:layout_margin="@dimen/_3sdp"/>
-                            <com.zavosh.software.dentist.dentist.CustomViews.MyCheckBox
+                            <com.zavosh.software.DrDandoon.CustomViews.MyCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:buttonTint="@color/end"
@@ -324,7 +324,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:background="@color/white">
-                    <com.zavosh.software.dentist.dentist.CustomViews.MyTextView
+                    <com.zavosh.software.DrDandoon.CustomViews.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="@dimen/_10sdp"
@@ -346,7 +346,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             android:gravity="right">
-                            <com.zavosh.software.dentist.dentist.CustomViews.MyCheckBox
+                            <com.zavosh.software.DrDandoon.CustomViews.MyCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:buttonTint="@color/end"
@@ -356,7 +356,7 @@
                                 android:layoutDirection="rtl"
                                 android:textColor="@color/text_color"
                                 android:layout_margin="@dimen/_3sdp"/>
-                            <com.zavosh.software.dentist.dentist.CustomViews.MyCheckBox
+                            <com.zavosh.software.DrDandoon.CustomViews.MyCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:buttonTint="@color/end"
@@ -373,7 +373,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             android:gravity="right">
-                            <com.zavosh.software.dentist.dentist.CustomViews.MyCheckBox
+                            <com.zavosh.software.DrDandoon.CustomViews.MyCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:buttonTint="@color/end"
@@ -383,7 +383,7 @@
                                 android:textColor="@color/text_color"
                                 android:layout_margin="@dimen/_3sdp"
                                 android:id="@+id/ch_automatically"/>
-                            <com.zavosh.software.dentist.dentist.CustomViews.MyCheckBox
+                            <com.zavosh.software.DrDandoon.CustomViews.MyCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:buttonTint="@color/end"
@@ -409,7 +409,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:background="@color/white">
-                    <com.zavosh.software.dentist.dentist.CustomViews.MyTextView
+                    <com.zavosh.software.DrDandoon.CustomViews.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="@dimen/_10sdp"
@@ -431,7 +431,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             android:gravity="right">
-                            <com.zavosh.software.dentist.dentist.CustomViews.MyCheckBox
+                            <com.zavosh.software.DrDandoon.CustomViews.MyCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:buttonTint="@color/end"
@@ -448,7 +448,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             android:gravity="right">
-                            <com.zavosh.software.dentist.dentist.CustomViews.MyCheckBox
+                            <com.zavosh.software.DrDandoon.CustomViews.MyCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:buttonTint="@color/end"
@@ -458,7 +458,7 @@
                                 android:textColor="@color/text_color"
                                 android:layout_margin="@dimen/_3sdp"
                                 android:id="@+id/ch_no"/>
-                            <com.zavosh.software.dentist.dentist.CustomViews.MyCheckBox
+                            <com.zavosh.software.DrDandoon.CustomViews.MyCheckBox
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:buttonTint="@color/end"
@@ -484,7 +484,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:background="@color/white">
-                    <com.zavosh.software.dentist.dentist.CustomViews.MyTextView
+                    <com.zavosh.software.DrDandoon.CustomViews.MyTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="@dimen/_10sdp"
@@ -495,7 +495,7 @@
                         android:textSize="@dimen/_12sdp"
                         android:text="@string/drugsUsed"
                         />
-                    <com.zavosh.software.dentist.dentist.CustomViews.MyEditText
+                    <com.zavosh.software.DrDandoon.CustomViews.MyEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:minLines="3"
@@ -525,7 +525,7 @@
         android:layout_height="wrap_content"
         android:gravity="bottom|center"
         android:paddingTop="@dimen/_10sdp">
-        <com.zavosh.software.dentist.dentist.CustomViews.MyButton
+        <com.zavosh.software.DrDandoon.CustomViews.MyButton
             android:layout_width="@dimen/_80sdp"
             android:layout_height="@dimen/_30sdp"
             android:background="@drawable/bg_button_app"

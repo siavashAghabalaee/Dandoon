@@ -39,7 +39,7 @@
     <color name="hint">#959596</color>
 
     <color name="fab_normal">#00959596</color>
-    <color name="fab_pressed">#41959596</color>
+    <color name="fab_pressed">#d0a1a1a1</color>
     <color name="fab_colorRipple">#959596</color>
 
 

@@ -22,7 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/bg_choose_role">
-                <com.zavosh.software.dentist.dentist.CustomViews.MyImageView
+                <com.zavosh.software.DrDandoon.CustomViews.MyImageView
                     android:layout_width="@dimen/_30sdp"
                     android:layout_height="@dimen/_30sdp"
                     android:layout_centerVertical="true"
@@ -31,7 +31,7 @@
                     android:id="@+id/iv_filter"
                     android:padding="@dimen/_5sdp"
                     android:src="@mipmap/filter_icon"/>
-                <com.zavosh.software.dentist.dentist.CustomViews.MyImageView
+                <com.zavosh.software.DrDandoon.CustomViews.MyImageView
                     android:layout_width="@dimen/_30sdp"
                     android:layout_height="@dimen/_30sdp"
                     android:layout_centerVertical="true"
@@ -40,13 +40,13 @@
                     android:layout_alignParentEnd="true"
                     android:id="@+id/iv_icon"
                     android:src="@mipmap/add"/>
-                <com.zavosh.software.dentist.dentist.CustomViews.MyTextView
+                <com.zavosh.software.DrDandoon.CustomViews.MyTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@+id/iv_logo"
                     android:textColor="@color/white"
-                    android:text="@string/add"
+                    android:text="@string/chooseTooth"
                     android:padding="@dimen/_10sdp"
                     android:textSize="@dimen/_13sdp"
                     android:layout_toLeftOf="@+id/iv_icon"/>
@@ -59,7 +59,7 @@
             android:id="@+id/recyclerView"/>
     </LinearLayout>
 
-    <com.zavosh.software.dentist.dentist.CustomViews.MyProgressBarBlue
+    <com.zavosh.software.DrDandoon.CustomViews.MyProgressBarBlue
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -67,7 +67,7 @@
         android:id="@+id/loader"
         android:visibility="gone"/>
 
-    <com.zavosh.software.dentist.dentist.CustomViews.MyTextView
+    <com.zavosh.software.DrDandoon.CustomViews.MyTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="@dimen/_14sdp"
@@ -109,7 +109,7 @@
         fab:menu_labels_paddingBottom="4dp"
         fab:menu_labels_paddingLeft="8dp"
         fab:menu_labels_padding="8dp"
-        fab:menu_labels_textColor="@color/text_color"
+        fab:menu_labels_textColor="@color/white"
         fab:menu_labels_textSize="14sp"
         fab:menu_labels_cornerRadius="@dimen/_15sdp"
         fab:menu_labels_colorNormal="@color/fab_pressed"
@@ -125,16 +125,6 @@
         fab:menu_backgroundColor="@android:color/transparent"
         fab:menu_fab_label="">
 
-        <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/menu_item"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/profile_icone"
-            fab:fab_size="mini"
-            fab:fab_label="@string/profile"
-            fab:fab_colorNormal="@color/end"
-            fab:fab_colorPressed="@color/start"
-            fab:fab_colorRipple="@color/text_color"/>
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/menu_list"
             android:layout_width="wrap_content"

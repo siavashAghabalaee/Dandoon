@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_button_white">
+    <com.zavosh.software.DrDandoon.CustomViews.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:text="@string/out"
+        android:textSize="@dimen/_13sdp"
+        android:padding="@dimen/LoadingDots_dots_size_default"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp">
+        <com.zavosh.software.DrDandoon.CustomViews.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:padding="@dimen/_10sdp"
+            android:gravity="right"
+            android:textSize="@dimen/_12sdp"
+            android:text="@string/logout"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <com.zavosh.software.DrDandoon.CustomViews.MyButton
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button_app"
+            android:text="@string/no"
+            android:layout_margin="@dimen/_10sdp"
+            android:id="@+id/btn_no"/>
+        <com.zavosh.software.DrDandoon.CustomViews.MyButton
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button_app"
+            android:text="@string/yes"
+            android:layout_margin="@dimen/_10sdp"
+            android:id="@+id/btn_yes"/>
+
+    </LinearLayout>
+
+</LinearLayout>

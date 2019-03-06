@@ -7,7 +7,7 @@
     tools:context=".Activities.MVP_Splash.SplashActivity"
     android:background="@drawable/bg_choose_role">
 
-    <com.zavosh.software.dentist.dentist.CustomViews.MyImageView
+    <com.zavosh.software.DrDandoon.CustomViews.MyImageView
         android:layout_width="@dimen/_150sdp"
         android:layout_height="@dimen/_150sdp"
         android:layout_centerHorizontal="true"
@@ -15,7 +15,7 @@
         android:scaleType="centerCrop"
         android:id="@+id/logo"
         android:layout_marginTop="@dimen/_100sdp"/>
-    <com.zavosh.software.dentist.dentist.CustomViews.MyTextView
+    <com.zavosh.software.DrDandoon.CustomViews.MyTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="@dimen/_10sdp"

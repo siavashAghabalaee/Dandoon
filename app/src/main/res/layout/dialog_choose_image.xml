@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_button_white">
-    <com.zavosh.software.dentist.dentist.CustomViews.MyTextView
+    <com.zavosh.software.DrDandoon.CustomViews.MyTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/text_color"
@@ -30,7 +30,7 @@
                 android:src="@mipmap/camera"
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/_10sdp"/>
-            <com.zavosh.software.dentist.dentist.CustomViews.MyTextView
+            <com.zavosh.software.DrDandoon.CustomViews.MyTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/LoadingDots_dots_size_default"
@@ -51,7 +51,7 @@
                 android:src="@mipmap/gallery"
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/_10sdp"/>
-            <com.zavosh.software.dentist.dentist.CustomViews.MyTextView
+            <com.zavosh.software.DrDandoon.CustomViews.MyTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/LoadingDots_dots_size_default"
@@ -62,7 +62,7 @@
         </LinearLayout>
     </LinearLayout>
 
-    <com.zavosh.software.dentist.dentist.CustomViews.MyTextView
+    <com.zavosh.software.DrDandoon.CustomViews.MyTextView
         android:layout_width="@dimen/_60sdp"
         android:layout_height="@dimen/_30sdp"
         android:background="@drawable/bg_button_white"
