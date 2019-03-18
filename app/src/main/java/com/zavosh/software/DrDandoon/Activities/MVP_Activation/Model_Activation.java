@@ -5,6 +5,7 @@ import android.util.Log;
 
 import com.zavosh.software.DrDandoon.Content.Content;
 import com.zavosh.software.DrDandoon.Helper.CheckResponse;
+import com.zavosh.software.DrDandoon.Helper.FabricSender;
 import com.zavosh.software.DrDandoon.Helper.PublicMethods;
 import com.zavosh.software.DrDandoon.MyInterfaces.RequestsManager;
 import com.zavosh.software.DrDandoon.R;
@@ -43,7 +44,7 @@ public class Model_Activation implements Contract_Activation.Model , RequestsMan
         ActivationSender activationSender = new ActivationSender(
                 PublicMethods.loadData(PublicMethods.REGISTER_TOKEN,""),
                 code,PublicMethods.getDeviceId(context),
-                PublicMethods.GetDeviceString(),
+                PublicMethods.getDeviceString(),
                 Content.OSTYPE,
                 PublicMethods.getAndroidApi());
 
@@ -61,6 +62,8 @@ public class Model_Activation implements Contract_Activation.Model , RequestsMan
                     PublicMethods.saveData(PublicMethods.TOKEN_ID,response.body().getResult().getTokenId());
                     PublicMethods.saveData(PublicMethods.PASSWORD,code);
                     presenter.activated();
+
+                    FabricSender.Register();
                 }
             }
 

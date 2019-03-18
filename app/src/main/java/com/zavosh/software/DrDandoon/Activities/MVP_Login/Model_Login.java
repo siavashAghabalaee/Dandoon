@@ -4,6 +4,7 @@ import android.content.Context;
 
 import com.zavosh.software.DrDandoon.Content.Content;
 import com.zavosh.software.DrDandoon.Helper.CheckResponse;
+import com.zavosh.software.DrDandoon.Helper.FabricSender;
 import com.zavosh.software.DrDandoon.Helper.PublicMethods;
 import com.zavosh.software.DrDandoon.MyInterfaces.RequestsManager;
 import com.zavosh.software.DrDandoon.R;
@@ -66,6 +67,8 @@ public class Model_Login implements Contract_Login.Model , RequestsManager {
                     }else {
                         presenter.goHomeSick();
                     }
+
+                    FabricSender.login();
                 }
             }
 

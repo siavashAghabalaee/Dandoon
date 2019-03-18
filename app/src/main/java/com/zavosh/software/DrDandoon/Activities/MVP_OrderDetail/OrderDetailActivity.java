@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -17,6 +18,7 @@ import com.zavosh.software.DrDandoon.CustomViews.MyButton;
 import com.zavosh.software.DrDandoon.CustomViews.MyImageView;
 import com.zavosh.software.DrDandoon.CustomViews.MyTextView;
 import com.zavosh.software.DrDandoon.CustomViews.MyToast;
+import com.zavosh.software.DrDandoon.Helper.PublicMethods;
 import com.zavosh.software.DrDandoon.R;
 import com.zavosh.software.DrDandoon.Retrofit.OrderDetailRequest.NewQuestion;
 import com.zavosh.software.DrDandoon.Retrofit.OrderDetailRequest.OrderDetailResult;
@@ -37,6 +39,7 @@ public class OrderDetailActivity extends AppCompatActivity implements Contract_O
     private MyImageView image1,image2,image3,iv_opg,back;
     private AlertDialog show;
     private MyTextView tv_phone,tv_name;
+    private boolean isAccept;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +53,7 @@ public class OrderDetailActivity extends AppCompatActivity implements Contract_O
 
     private void reference() {
         orderCode = getIntent().getExtras().getString(Content.ORDER_KEY);
+        Log.i("orderCode",orderCode);
         presenter = new Presenter_OrderDetail();
         presenter.attachView(this,OrderDetailActivity.this);
         myProgressBar = findViewById(R.id.myProgressBar);
@@ -73,6 +77,16 @@ public class OrderDetailActivity extends AppCompatActivity implements Contract_O
         questionFive = findViewById(R.id.questionFive);
         questionSix = findViewById(R.id.questionSix);
         presenter.onCreate(orderCode);
+
+        if (PublicMethods.loadData(PublicMethods.ROLE,"").equals(Content.SICK)){
+            isAccept = Boolean.parseBoolean(getIntent().getExtras().getString(Content.STATUS));
+            if (isAccept){
+                btn_buy.setVisibility(View.INVISIBLE);
+            }else {
+                btn_buy.setText(R.string.cancel);
+            }
+
+        }
     }
 
     private void listeners(){
@@ -124,7 +138,11 @@ public class OrderDetailActivity extends AppCompatActivity implements Contract_O
         btn_buy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                presenter.buyClicked(orderCode);
+                if (PublicMethods.loadData(PublicMethods.ROLE,"").equals(Content.SICK)){
+                    presenter.cancelClicked();
+                }else {
+                    presenter.buyClicked(orderCode);
+                }
             }
         });
     }
@@ -304,6 +322,11 @@ public class OrderDetailActivity extends AppCompatActivity implements Contract_O
 
         tv_name.setText(result.getFullName());
         tv_phone.setText(result.getCellNumber());
+    }
+
+    @Override
+    public void goBack() {
+        onBackPressed();
     }
 
     @Override

@@ -73,7 +73,11 @@
             android:name=".Activities.MVP_MyPatientList.MyPatientListActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".Activities.MVP_AboutUs.AboutUsActivity" />
-        <activity android:name=".Activities.MVP_Sapport.SupportActivity"></activity>
+        <activity android:name=".Activities.MVP_Support.SupportActivity" />
+        <activity android:name=".Activities.MVP_OrderHistoryActivity.OrderHistoryActivity"></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="bae60924f927e86c14dec39295bfe06bc697e732" />
     </application>
 
 </manifest>

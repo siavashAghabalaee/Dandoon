@@ -1,4 +1,4 @@
-package com.zavosh.software.DrDandoon.Activities.MVP_Sapport;
+package com.zavosh.software.DrDandoon.Activities.MVP_Support;
 
 import android.content.Context;
 

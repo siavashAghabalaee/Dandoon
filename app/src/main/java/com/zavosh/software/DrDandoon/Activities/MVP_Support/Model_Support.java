@@ -1,7 +1,8 @@
-package com.zavosh.software.DrDandoon.Activities.MVP_Sapport;
+package com.zavosh.software.DrDandoon.Activities.MVP_Support;
 
 import android.content.Context;
 
+import com.zavosh.software.DrDandoon.Helper.CheckResponse;
 import com.zavosh.software.DrDandoon.Helper.PublicMethods;
 import com.zavosh.software.DrDandoon.MyInterfaces.RequestsManager;
 import com.zavosh.software.DrDandoon.R;
@@ -9,6 +10,7 @@ import com.zavosh.software.DrDandoon.Retrofit.APIService;
 import com.zavosh.software.DrDandoon.Retrofit.ApiUtils;
 import com.zavosh.software.DrDandoon.Retrofit.LoginRequest.LoginResult;
 import com.zavosh.software.DrDandoon.Retrofit.LoginRequest.LoginSender;
+import com.zavosh.software.DrDandoon.Retrofit.SendMessageRequest.SendMessageRequest;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -41,21 +43,24 @@ public class Model_Support implements Contract_Support.Model , RequestsManager {
     private void sendToServer(String subject, String description) {
         APIService apiService = ApiUtils.getAPIService();
         LoginSender loginSender = new LoginSender(PublicMethods.loadData(PublicMethods.PHONE,""), PublicMethods.loadData(PublicMethods.PASSWORD,""),PublicMethods.loadData(PublicMethods.ROLE,""));
+        Call<SendMessageRequest> sendMessageRequestCall = apiService.postMessage(PublicMethods.loadData(PublicMethods.TOKEN_ID, ""), subject, description);
 
-        Call<LoginResult> login = apiService.login(loginSender);
-        login.enqueue(new Callback<LoginResult>() {
+        sendMessageRequestCall.enqueue(new Callback<SendMessageRequest>() {
             @Override
-            public void onResponse(Call<LoginResult> call, Response<LoginResult> response) {
-                if (response.code() == 200){
-                    if (response.body().getStatus().getIsSuccess()){
-                        presenter.posted();
-                        presenter.showMessage(response.body().getStatus().getMessage());
-                    }
+            public void onResponse(Call<SendMessageRequest> call, Response<SendMessageRequest> response) {
+
+                CheckResponse checkResponse = new CheckResponse();
+                checkResponse.requestsManager = Model_Support.this;
+                if (checkResponse.checkRequestCode(response.code(),context,1) && checkResponse.checkStatus(response.code(),response.body().getStatus(),context,1)){
+                    presenter.posted();
+                    presenter.showMessage(response.body().getStatus().getMessage());
                 }
+
+
             }
 
             @Override
-            public void onFailure(Call<LoginResult> call, Throwable t) {
+            public void onFailure(Call<SendMessageRequest> call, Throwable t) {
                 presenter.setMessageToMonitor(context.getString(R.string.androidErrorRequest));
                 presenter.showMessage(context.getString(R.string.androidErrorRequest));
             }

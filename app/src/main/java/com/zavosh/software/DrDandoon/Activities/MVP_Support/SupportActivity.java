@@ -1,4 +1,4 @@
-package com.zavosh.software.DrDandoon.Activities.MVP_Sapport;
+package com.zavosh.software.DrDandoon.Activities.MVP_Support;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import com.eyalbira.loadingdots.LoadingDots;
-import com.zavosh.software.DrDandoon.Activities.MVP_AboutUs.AboutUsActivity;
+import com.zavosh.software.DrDandoon.Content.Content;
 import com.zavosh.software.DrDandoon.CustomViews.MyButton;
 import com.zavosh.software.DrDandoon.CustomViews.MyEditText;
 import com.zavosh.software.DrDandoon.CustomViews.MyImageView;
@@ -56,8 +56,7 @@ public class SupportActivity extends AppCompatActivity implements Contract_Suppo
         btn_call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO phone from intent
-                presenter.callClicked("09351252911");
+                presenter.callClicked(getIntent().getExtras().getString(Content.SUPPORT_PHONE));
             }
         });
         btn_send.setOnClickListener(new View.OnClickListener() {

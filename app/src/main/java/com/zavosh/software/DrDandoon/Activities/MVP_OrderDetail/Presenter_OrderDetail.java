@@ -34,6 +34,12 @@ public class Presenter_OrderDetail implements Contract_OrderDetail.Presenter {
     }
 
     @Override
+    public void cancelClicked() {
+        view.loadMyProgressbar();
+        model.cancelOrder();
+    }
+
+    @Override
     public void setData(OrderDetailResult data) {
         view.setData(data);
         view.stopMyProgressbar();
@@ -57,5 +63,10 @@ public class Presenter_OrderDetail implements Contract_OrderDetail.Presenter {
     @Override
     public void dismiss() {
         view.dismiss();
+    }
+
+    @Override
+    public void canceled() {
+        view.goBack();
     }
 }

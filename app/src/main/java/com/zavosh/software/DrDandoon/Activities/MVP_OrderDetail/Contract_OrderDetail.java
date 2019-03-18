@@ -15,6 +15,7 @@ public interface Contract_OrderDetail {
         void setMessageOnProgressbar(String message);
         void showDialogPatientInfo();
         void setPatientInfo(PostPurchaseResult result);
+        void goBack();
         void dismiss();
     }
 
@@ -23,6 +24,7 @@ public interface Contract_OrderDetail {
         void onCreate(String orderId);
         void retryClicked(String orderId);
         void buyClicked(String orderCode);
+        void cancelClicked();
 
         //----------------------
 
@@ -31,6 +33,7 @@ public interface Contract_OrderDetail {
         void setMessageOnProgressbar(String message);
         void setPatientInfo(PostPurchaseResult result);
         void dismiss();
+        void canceled();
 
     }
 
@@ -38,6 +41,7 @@ public interface Contract_OrderDetail {
         void attachPresenter(Presenter presenter , Context  context);
         void getDataFromServer(String ordeId);
         void buyFromServer(String orderCode);
+        void cancelOrder();
 
     }
 }

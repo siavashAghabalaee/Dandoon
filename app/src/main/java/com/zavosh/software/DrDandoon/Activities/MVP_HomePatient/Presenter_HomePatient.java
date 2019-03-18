@@ -32,6 +32,21 @@ public class Presenter_HomePatient implements Contract_HomePatient.Presenter {
     }
 
     @Override
+    public void inviteClicked() {
+        model.inviteFriend();
+    }
+
+    @Override
+    public void aboutUsClicked() {
+        model.goAboutUs();
+    }
+
+    @Override
+    public void supportClicked() {
+        model.goSupport();
+    }
+
+    @Override
     public void loadedData(List<String> images, String phone, String name, String imageProfile) {
         view.setData(images,phone,name,imageProfile);
     }

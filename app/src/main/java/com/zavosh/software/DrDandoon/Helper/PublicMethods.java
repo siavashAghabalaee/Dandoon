@@ -49,18 +49,18 @@ public class PublicMethods {
         return numberAsString;
     }
 
-    public static boolean isOnline(Context context) {
-        ConnectivityManager cm = (ConnectivityManager)context.getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo netInfo = null;
-        if (cm != null) {
-            netInfo = cm.getActiveNetworkInfo();
-        }
-        if (netInfo != null && netInfo.isConnectedOrConnecting()) {
-            return true;
-        }
-        return false;
-
-    }
+    //public static boolean isOnline(Context context) {
+    //    ConnectivityManager cm = (ConnectivityManager)context.getSystemService(Context.CONNECTIVITY_SERVICE);
+    //    NetworkInfo netInfo = null;
+    //    if (cm != null) {
+    //        netInfo = cm.getActiveNetworkInfo();
+    //    }
+    //    if (netInfo != null && netInfo.isConnectedOrConnecting()) {
+    //        return true;
+    //    }
+    //    return false;
+//
+    //}
 
     public static boolean isMyServiceRunning(Class<?> serviceClass,Context context) {
         ActivityManager manager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
@@ -80,7 +80,7 @@ public class PublicMethods {
         }
     }
 
-    public static String GetDeviceString() {
+    public static String getDeviceString() {
         if (_device != null)
             return _device;
         if (Build.MODEL.contains(Build.MANUFACTURER)) {
@@ -118,4 +118,9 @@ public class PublicMethods {
         }
         return version;
     }
+
+    public static String getPhone(){
+        return loadData(PHONE,"");
+    }
+
 }

@@ -16,6 +16,18 @@ public class HomeSickResult {
     @Expose
     private String fullName;
 
+    @SerializedName("aboutText")
+    @Expose
+    private String aboutText;
+
+    @SerializedName("inviteText")
+    @Expose
+    private String inviteText;
+
+    @SerializedName("supportPhone")
+    @Expose
+    private String supportPhone;
+
     public List<String> getHeaderImages() {
         return headerImages;
     }
@@ -40,4 +52,27 @@ public class HomeSickResult {
         this.fullName = fullName;
     }
 
+    public String getAboutText() {
+        return aboutText;
+    }
+
+    public void setAboutText(String aboutText) {
+        this.aboutText = aboutText;
+    }
+
+    public String getInviteText() {
+        return inviteText;
+    }
+
+    public void setInviteText(String inviteText) {
+        this.inviteText = inviteText;
+    }
+
+    public String getSupportPhone() {
+        return supportPhone;
+    }
+
+    public void setSupportPhone(String supportPhone) {
+        this.supportPhone = supportPhone;
+    }
 }

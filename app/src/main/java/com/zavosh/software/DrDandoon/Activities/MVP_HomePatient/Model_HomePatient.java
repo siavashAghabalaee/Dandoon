@@ -1,7 +1,10 @@
 package com.zavosh.software.DrDandoon.Activities.MVP_HomePatient;
 
 import android.content.Context;
+import android.content.Intent;
 
+import com.zavosh.software.DrDandoon.Activities.MVP_AboutUs.AboutUsActivity;
+import com.zavosh.software.DrDandoon.Activities.MVP_Support.SupportActivity;
 import com.zavosh.software.DrDandoon.Content.Content;
 import com.zavosh.software.DrDandoon.Helper.CheckResponse;
 import com.zavosh.software.DrDandoon.Helper.PublicMethods;
@@ -18,6 +21,9 @@ import retrofit2.Response;
 public class Model_HomePatient implements Contract_HomePatient.Model , RequestsManager {
     private Contract_HomePatient.Presenter presenter;
     private Context context;
+    private String inviteText = "";
+    private String aboutUs = "";
+    private String supportPhone = "";
 
     @Override
     public void attachPresenter(Contract_HomePatient.Presenter presenter, Context context) {
@@ -30,6 +36,29 @@ public class Model_HomePatient implements Contract_HomePatient.Model , RequestsM
         getHome();
     }
 
+    @Override
+    public void inviteFriend() {
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, inviteText);
+        sendIntent.setType("text/plain");
+        context.startActivity(sendIntent);
+    }
+
+    @Override
+    public void goAboutUs() {
+        Intent intent = new Intent(context,AboutUsActivity.class);
+        intent.putExtra(Content.ABOUT_KEY,aboutUs);
+        context.startActivity(intent);
+    }
+
+    @Override
+    public void goSupport() {
+        Intent intent = new Intent(context,SupportActivity.class);
+        intent.putExtra(Content.SUPPORT_PHONE,supportPhone);
+        context.startActivity(intent);
+    }
+
     private void getHome() {
         APIService apiService = ApiUtils.getAPIService();
         Call<HomeSickRequest> homeSickRequestCall = apiService.homeSickRequest(PublicMethods.loadData(PublicMethods.TOKEN_ID, ""), PublicMethods.getAppVersion(context), Content.OSTYPE);
@@ -39,6 +68,9 @@ public class Model_HomePatient implements Contract_HomePatient.Model , RequestsM
                 CheckResponse checkResponse = new CheckResponse();
                 checkResponse.requestsManager = Model_HomePatient.this;
                 if (checkResponse.checkRequestCode(response.code(),context,1) && checkResponse.checkStatus(response.code(),response.body().getStatus(),context,1)){
+                    inviteText = response.body().getResult().getInviteText();
+                    aboutUs = response.body().getResult().getAboutText();
+                    supportPhone = response.body().getResult().getSupportPhone();
                     presenter.loadedData(response.body().getResult().getHeaderImages(),response.body().getResult().getCellNumber(),response.body().getResult().getFullName(),"");
                     presenter.hideProgressBarr();
                 }
@@ -61,4 +93,5 @@ public class Model_HomePatient implements Contract_HomePatient.Model , RequestsM
     public void setMessageForProgressBar(String message,int id) {
         presenter.setMessageInMonitor(message);
     }
+
 }

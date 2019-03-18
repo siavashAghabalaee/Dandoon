@@ -3,10 +3,12 @@ package com.zavosh.software.DrDandoon.Activities.MVP_AboutUs;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
+import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 
 import com.eyalbira.loadingdots.LoadingDots;
+import com.zavosh.software.DrDandoon.Content.Content;
 import com.zavosh.software.DrDandoon.CustomViews.MyButton;
 import com.zavosh.software.DrDandoon.CustomViews.MyImageView;
 import com.zavosh.software.DrDandoon.CustomViews.MyTextView;
@@ -21,6 +23,8 @@ public class AboutUsActivity extends AppCompatActivity implements Contract_About
     private MyButton retry;
     private LoadingDots loaderDots;
     private Presenter_AboutUs presenter;
+    private String text = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +44,8 @@ public class AboutUsActivity extends AppCompatActivity implements Contract_About
         presenter = new Presenter_AboutUs();
         presenter.attachView(this,AboutUsActivity.this);
         presenter.onCreate();
-
+        text = getIntent().getExtras().getString(Content.ABOUT_KEY);
+        tv_aboutUs.setText(text);
     }
 
     private void listeners(){
@@ -59,7 +64,7 @@ public class AboutUsActivity extends AppCompatActivity implements Contract_About
 
     @Override
     public void setData(String data) {
-        tv_aboutUs.setText(data);
+
     }
 
     @Override

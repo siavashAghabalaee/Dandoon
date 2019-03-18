@@ -19,6 +19,9 @@ public interface Contract_HomePatient {
         void onResume();
         void onPause();
         void retryClicked();
+        void inviteClicked();
+        void aboutUsClicked();
+        void supportClicked();
         //-----------
         void loadedData(List<String> images , String phone , String name , String imageProfile);
         void showMessage(String message);
@@ -29,5 +32,8 @@ public interface Contract_HomePatient {
     interface Model{
         void attachPresenter(Presenter presenter , Context context);
         void getData();
+        void inviteFriend();
+        void goAboutUs();
+        void goSupport();
     }
 }

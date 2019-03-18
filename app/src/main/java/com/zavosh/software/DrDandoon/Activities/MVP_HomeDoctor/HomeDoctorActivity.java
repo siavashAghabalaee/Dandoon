@@ -15,18 +15,15 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import com.eyalbira.loadingdots.LoadingDots;
-import com.zavosh.software.DrDandoon.Activities.MVP_AboutUs.AboutUsActivity;
 import com.zavosh.software.DrDandoon.Activities.MVP_ChoosePatient.ChoosePatientActivity;
 import com.zavosh.software.DrDandoon.Activities.MVP_ChooseRole.ChooseRole;
-import com.zavosh.software.DrDandoon.Activities.MVP_HomePatient.HomePatientActivity;
-import com.zavosh.software.DrDandoon.Activities.MVP_Login.LoginActivity;
 import com.zavosh.software.DrDandoon.Activities.MVP_MyPatientList.MyPatientListActivity;
-import com.zavosh.software.DrDandoon.Activities.MVP_Sapport.SupportActivity;
 import com.zavosh.software.DrDandoon.Adapters.MyPagerAdapter;
 import com.zavosh.software.DrDandoon.CustomViews.MyButton;
 import com.zavosh.software.DrDandoon.CustomViews.MyImageView;
 import com.zavosh.software.DrDandoon.CustomViews.MyTextView;
 import com.zavosh.software.DrDandoon.CustomViews.MyToast;
+import com.zavosh.software.DrDandoon.Helper.FabricSender;
 import com.zavosh.software.DrDandoon.Helper.PublicMethods;
 import com.zavosh.software.DrDandoon.R;
 
@@ -51,6 +48,7 @@ public class HomeDoctorActivity extends AppCompatActivity implements Contract_Ho
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        FabricSender.home();
         reference();
         listeners();
         //showMessage("doctor");
@@ -116,27 +114,20 @@ public class HomeDoctorActivity extends AppCompatActivity implements Contract_Ho
         cv_aboutUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeDoctorActivity.this,AboutUsActivity.class);
-                startActivity(intent);
+                presenter.aboutUsClicked();
             }
         });
 
         cv_invite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent sendIntent = new Intent();
-                sendIntent.setAction(Intent.ACTION_SEND);
-                sendIntent.putExtra(Intent.EXTRA_TEXT, "come to dr dandoon");
-                sendIntent.setType("text/plain");
-                startActivity(sendIntent);
+                presenter.inviteClicked();
             }
         });
         cv_support.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeDoctorActivity.this,SupportActivity.class);
-                //Todo phono begir
-                startActivity(intent);
+                presenter.supportClicked();
             }
         });
 
@@ -165,6 +156,7 @@ public class HomeDoctorActivity extends AppCompatActivity implements Contract_Ho
                 yes.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        FabricSender.logout();
                         PublicMethods.clearAllData();
                         Intent intent = new Intent(HomeDoctorActivity.this, ChooseRole.class);
                         try {

@@ -33,35 +33,12 @@ public class Model_AboutUs implements Contract_AboutUs.Model , RequestsManager {
     }
 
     private void getDataFromServer() {
-        APIService apiService = ApiUtils.getAPIService();
-        LoginSender loginSender = new LoginSender(PublicMethods.loadData(PublicMethods.PHONE,""), PublicMethods.loadData(PublicMethods.PASSWORD,""),PublicMethods.loadData(PublicMethods.ROLE,""));
-
-        Call<LoginResult> login = apiService.login(loginSender);
-        login.enqueue(new Callback<LoginResult>() {
-            @Override
-            public void onResponse(Call<LoginResult> call, Response<LoginResult> response) {
-                if (response.code() == 200){
-                    if (response.body().getStatus().getIsSuccess()){
-                        presenter.setData("namayeshe matn");
-                    }
-                }
-            }
-
-            @Override
-            public void onFailure(Call<LoginResult> call, Throwable t) {
-                presenter.setMessageMonitor(context.getString(R.string.androidErrorRequest));
-                presenter.showMessage(context.getString(R.string.androidErrorRequest));
-            }
-        });
+        presenter.setData("");
     }
 
     @Override
     public void resendRequest(int id) {
-        switch (id){
-            case 1:
-                //TODO
-                break;
-        }
+
     }
 
     @Override

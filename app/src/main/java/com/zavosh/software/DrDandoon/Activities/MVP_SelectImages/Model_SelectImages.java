@@ -6,6 +6,7 @@ import android.util.Base64;
 
 import com.zavosh.software.DrDandoon.Activities.MVP_ToothSelection.ToothSelectionActivity;
 import com.zavosh.software.DrDandoon.Helper.CheckResponse;
+import com.zavosh.software.DrDandoon.Helper.FabricSender;
 import com.zavosh.software.DrDandoon.Helper.PublicMethods;
 import com.zavosh.software.DrDandoon.MyInterfaces.RequestsManager;
 import com.zavosh.software.DrDandoon.R;
@@ -133,6 +134,8 @@ public class Model_SelectImages implements Contract_SelectImages.Model , Request
                 if (checkResponse.checkRequestCode(response.code(),context,1) && checkResponse.checkStatus(response.code(),response.body().getStatus(),context,1)){
                     presenter.goHome();
                     presenter.showMessage(response.body().getStatus().getMessage());
+
+                    FabricSender.addOrder();
                 }
             }
 

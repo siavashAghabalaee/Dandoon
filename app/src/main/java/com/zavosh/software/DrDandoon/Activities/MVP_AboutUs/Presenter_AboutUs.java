@@ -15,7 +15,7 @@ public class Presenter_AboutUs implements Contract_AboutUs.Presenter {
     @Override
     public void onCreate() {
         model.getData();
-        view.startLoading();
+        //view.startLoading();
     }
 
     @Override

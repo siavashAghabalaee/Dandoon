@@ -113,6 +113,10 @@
     <string name="tehran">تهران</string>
     <string name="logout">آیا می خواهید از حساب کاربری خود خارج شوید؟</string>
     <string name="out">خروج</string>
+    <string name="date">تاریخ ثبت :</string>
+    <string name="status">وضعیت :</string>
+    <string name="accepted">پذیرفته شده</string>
+    <string name="wait">در انتظار</string>
 
 
     <string-array name="toothArray">
