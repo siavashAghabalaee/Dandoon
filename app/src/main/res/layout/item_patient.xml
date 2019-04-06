@@ -90,7 +90,7 @@
                 android:layout_width="@dimen/_120sdp"
                 android:layout_height="@dimen/_120sdp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/mini" android:id="@+id/iv_tooth"/>
+                android:id="@+id/iv_tooth"/>
         </LinearLayout>
 
     </LinearLayout>

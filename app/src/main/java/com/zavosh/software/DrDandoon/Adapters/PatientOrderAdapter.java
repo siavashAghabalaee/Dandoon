@@ -60,7 +60,7 @@ public class PatientOrderAdapter extends RecyclerView.Adapter {
                 itemViewHolder.tv_status.setText(activity.getString(R.string.wait));
             }
 
-            itemViewHolder.iv_tooth.setPicasso(patientOrder.getImage());
+            itemViewHolder.iv_tooth.setPicasso(patientOrder.getImage(),activity);
         }
     }
 
@@ -73,6 +73,7 @@ public class PatientOrderAdapter extends RecyclerView.Adapter {
     public int getItemViewType(int position) {
         return TYPE_ITEM;
     }
+
 
     public class ItemViewHolder extends RecyclerView.ViewHolder {
         public MyTextView tv_date,tv_toothNumber,tv_status;

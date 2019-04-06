@@ -22,7 +22,7 @@ public class ZoomImageActivity extends AppCompatActivity {
         imageZoom = findViewById(R.id.imageZoom);
         back = findViewById(R.id.iv_back);
 
-        imageZoom.setPicasso(imageUrl);
+        imageZoom.setPicasso(imageUrl,ZoomImageActivity.this);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override

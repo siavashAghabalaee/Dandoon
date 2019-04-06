@@ -57,7 +57,7 @@ public class MyPatientListAdapter extends RecyclerView.Adapter {
             itemViewHolder.tv_ageType.setText(patientItemResult.getKidStatus());
             itemViewHolder.tv_group.setText(patientItemResult.getTypeTitle());
             itemViewHolder.tv_toothNumber.setText(patientItemResult.getNumber());
-            itemViewHolder.iv_tooth.setPicasso(patientItemResult.getImage());
+            itemViewHolder.iv_tooth.setPicasso(patientItemResult.getImage(),activity);
         }
     }
 

@@ -117,6 +117,10 @@
     <string name="status">وضعیت :</string>
     <string name="accepted">پذیرفته شده</string>
     <string name="wait">در انتظار</string>
+    <string name="sampleToothImage">نمونه عکس گرفته شده از دندان.</string>
+    <string name="sampleToothImageOpg">نمونه عکس OPG.</string>
+    <string name="setImageTooth">لطفا حد اکثر 3 عکس از دندان مورد نظر قرار دهید.</string>
+    <string name="setImageToothOpg">عکس OPG (اختیاری)</string>
 
 
     <string-array name="toothArray">

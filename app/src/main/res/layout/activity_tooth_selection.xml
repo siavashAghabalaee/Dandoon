@@ -121,9 +121,10 @@
         <ImageView
             android:layout_width="@dimen/_150sdp"
             android:layout_height="@dimen/_220sdp"
+            android:scaleType="fitXY"
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
-            android:src="@drawable/tooths"
+            android:src="@drawable/tooth_test"
             android:id="@+id/imagetooths"/>
         <LinearLayout
             android:layout_width="0dp"

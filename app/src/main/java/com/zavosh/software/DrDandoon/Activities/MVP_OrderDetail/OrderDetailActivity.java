@@ -164,24 +164,24 @@ public class OrderDetailActivity extends AppCompatActivity implements Contract_O
                 image3.setImageResource(R.mipmap.tooth);
                 break;
             case 1:
-                image1.setPicasso(images.get(0));
+                image1.setPicasso(images.get(0),OrderDetailActivity.this);
                 image2.setImageResource(R.mipmap.tooth);
                 image3.setImageResource(R.mipmap.tooth);
                 break;
             case 2:
-                image1.setPicasso(images.get(0));
-                image2.setPicasso(images.get(1));
+                image1.setPicasso(images.get(0),OrderDetailActivity.this);
+                image2.setPicasso(images.get(1),OrderDetailActivity.this);
                 image3.setImageResource(R.mipmap.tooth);
                 break;
             case 3:
-                image1.setPicasso(images.get(0));
-                image2.setPicasso(images.get(1));
-                image3.setPicasso(images.get(2));
+                image1.setPicasso(images.get(0),OrderDetailActivity.this);
+                image2.setPicasso(images.get(1),OrderDetailActivity.this);
+                image3.setPicasso(images.get(2),OrderDetailActivity.this);
                 break;
         }
 
         if (data.getOpgImage() != null){
-            iv_opg.setPicasso(data.getOpgImage());
+            iv_opg.setPicasso(data.getOpgImage(),OrderDetailActivity.this);
         }else {
             iv_opg.setImageResource(R.mipmap.opg_icon);
         }
